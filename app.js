@@ -28,13 +28,12 @@ const displayCharacters = (characters) => {
     const htmlString = characters
         .map((character) => {
             return `
-            <li class="character">
-                <h2>${character.name}</h2>
-                <p>Species: ${character.nama}</p>           
-                <p>House: ${character.harga}</p>
-                <p>Wand: ${character.detail}</p>
-                <img src="${character.foto}"></img>
-            </li>
+            <div class="character">
+            <img src="${character.foto}"></img>
+                <h2>${character.nama}</h2>
+                <p> ${character.harga}</p>
+                <p> ${character.detail}</p>
+            </div>
         `;
         })
         .join('');

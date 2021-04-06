@@ -29,24 +29,15 @@ h1 {
   background-color: #eaeaea;
   border-radius: 3px;
   padding: 10px 20px;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-areas:
-      'nama foto'
-      'harga foto'
-      'detail foto';
-  text-align: left;
+  display: inline-flex;
 }
 
 .character > h2 {
-  grid-area: nama;
-  margin-bottom: 10px;
+  padding: 10px auto ;
 }
 
 .character > p {
-  grid-area: harga, detail;
   margin: 0;
-  margin-top: -18px;
   line-height: 2.3rem;
 }
 
